@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Purchase Request - Hardware Warranty</h2>
+        
+        <div class="form-row">
+            <div class="question">1) Was this budgeted for FY25 under Operating or Capital? If it is not budgeted, how will this request be funded?</div>
+            <textarea id="answer1" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">2) What is the Department Code for this request? What is the budget line#, if operating?</div>
+            <textarea id="answer2" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">3) Which facilities are included in this request/work order? Or will this work be done at the Enterprise-level impacting all facilities?</div>
+            <textarea id="answer3" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">4) Is this a new need/project or an increase to the current maintenance/services? Is this one-time or recurring?</div>
+            <textarea id="answer4" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">5) List other purchases or projects that are related to this request:</div>
+            <textarea id="answer5" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">6) Describe the purchase request and its justification (e.g. need, benefits, risks, consequences). Please specify how it aligns with our strategic plan:</div>
+            <textarea id="answer6" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">7) Who is the Technical Point of Contact (POC)?</div>
+            <textarea id="answer7" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">8) What is the Contract number, if applicable? Or RFB (request for bid) number if applicable?</div>
+            <textarea id="answer8" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">9) Quantity & Total Cost:</div>
+            <textarea id="answer9" rows="3" placeholder=" "></textarea>
+        </div>
+        <div class="form-row">
+            <div class="question">10) Please provide the shipping information, if applicable:</div>
+            <textarea id="answer10" rows="3" placeholder=" "></textarea>
+        </div>
+        
+        <div class="button-container">
+            <button id="generateButton">Generate Document</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
