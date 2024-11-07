@@ -1,84 +1,96 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(to right, #42275a, #734b6d);
-  }
-  
-  .container {
-    width: 80%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
-  }
-  
-  .button-container {
-    grid-column: 2; /* Aligns the button to the right column */
-    display: flex;
-    justify-content: flex-end; /* Aligns button to the right */
-    margin-top: 10px;
-  }
-  
-  button {
-    width: 30%;
-    padding: 12px; /* Makes the button smaller */
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #42275a;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #734b6d;
-  }
-  textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none; /* Prevents manual resizing */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+/* General body style with gradient background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #42275a, #734b6d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* Container style for the form */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+}
 
+/* Title styling */
+.container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Form row styling */
 .form-row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
+/* Question column styling */
 .question {
-    font-weight: bold;
-    margin-right: 10px;
-    width: 100%;
-    padding-top: 5px;
-    line-height: 1.5;
+  width: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  padding-right: 10px;
+  line-height: 1.5;
 }
 
+/* Answer text area styling */
 textarea {
-    width: 100%;
-    height: 60px; /* Adjust height to show more text by default */
-    line-height: 1.5;
-    overflow-y: auto; /* Adds a scrollbar for overflow text */
+  width: 50%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-  
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Clear button styling */
+#clearButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #734b6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#clearButton:hover {
+  background-color: #c82333;
+}
+
+/* Generate document button styling */
+#generateButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #42275a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#generateButton:hover {
+  background-color: #0056b3;
+}
